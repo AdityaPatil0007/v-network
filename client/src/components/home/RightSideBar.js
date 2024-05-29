@@ -40,7 +40,7 @@ const RightSideBar = () => {
             <div style={{opacity: 0.5}} className="my-2" >
             
                 <small>
-                   &copy; 2024 
+                   &copy; Paarsh Infotech Pvt. Ltd.
                 </small>
             </div>
 
