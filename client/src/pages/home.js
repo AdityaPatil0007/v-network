@@ -20,6 +20,8 @@ const Home = () => {
         }
     })
 
+    useEffect(()=>{console.log(homePosts)},[homePosts])
+
     useEffect(() => {
         setTimeout(() => {
             window.scrollTo({top: scroll, behavior: 'smooth'})
@@ -32,7 +34,7 @@ const Home = () => {
                 <Status />
 
                 {
-                    homePosts.loading 
+                    homePosts.result.length===0
                     ? <img src={LoadIcon} alt="loading" className="d-block mx-auto" />
                     : (homePosts.result === 0 && homePosts.posts.length === 0)
                         ? <h2 className="text-center">No Post</h2>
